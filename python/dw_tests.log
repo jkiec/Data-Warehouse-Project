@@ -1,0 +1,88 @@
+2025-05-28 13:38:06,259 - INFO - ================================================================================
+2025-05-28 13:38:06,259 - INFO - DATA WAREHOUSE ETL TEST SUITE
+2025-05-28 13:38:06,259 - INFO - ================================================================================
+2025-05-28 13:38:06,259 - INFO - 🔥🔥🔥 STARTING SMOKE TESTS 🔥🔥🔥
+2025-05-28 13:38:06,260 - INFO - 🔥 SMOKE TEST: Database Connectivity
+2025-05-28 13:38:06,351 - INFO - ✅ Database connection successful
+2025-05-28 13:38:06,352 - INFO - 🔥 SMOKE TEST: Schema Existence
+2025-05-28 13:38:06,452 - INFO - ✅ All required schemas exist
+2025-05-28 13:38:06,453 - INFO - 🔥 SMOKE TEST: Source Data Existence
+2025-05-28 13:38:06,537 - INFO - ✅ data_source.sales: 62,884 rows
+2025-05-28 13:38:06,614 - INFO - ✅ data_source.customers: 15,266 rows
+2025-05-28 13:38:06,697 - INFO - ✅ data_source.products: 2,517 rows
+2025-05-28 13:38:06,875 - INFO - ✅ data_source.stores: 67 rows
+2025-05-28 13:38:06,875 - INFO - ✅ Total source rows: 80,734
+2025-05-28 13:38:06,875 - INFO - 🔥 SMOKE TEST: ETL Log Infrastructure
+2025-05-28 13:38:06,966 - INFO - ✅ ETL log table accessible with 529 entries
+2025-05-28 13:38:06,966 - INFO - 🔥 SMOKE TESTS COMPLETED: 100.0% success rate
+2025-05-28 13:38:06,966 - INFO - 🎯🎯🎯 STARTING CRITICAL TESTS 🎯🎯🎯
+2025-05-28 13:38:06,966 - INFO - 🎯 CRITICAL TEST: Full ETL Pipeline Execution
+2025-05-28 13:38:11,137 - INFO - Procedure bl_cl.sp_run_full_etl executed successfully
+2025-05-28 13:38:11,138 - INFO - ✅ Full ETL pipeline completed in 0:00:04.171327
+2025-05-28 13:38:11,138 - INFO - 🎯 CRITICAL TEST: Post-ETL Data Validation
+2025-05-28 13:38:11,227 - INFO -   ✅ staging_sales: 62,884 records
+2025-05-28 13:38:11,312 - INFO -   ✅ staging_customers: 15,266 records
+2025-05-28 13:38:11,420 - INFO -   ✅ staging_products: 2,517 records
+2025-05-28 13:38:11,497 - INFO -   ✅ staging_stores: 67 records
+2025-05-28 13:38:11,583 - INFO -   ✅ 3nf_sales: 62,884 records
+2025-05-28 13:38:11,667 - INFO -   ✅ 3nf_products_scd: 2,517 records
+2025-05-28 13:38:11,751 - INFO -   ✅ 3nf_subcategories: 32 records
+2025-05-28 13:38:11,828 - INFO -   ✅ 3nf_categories: 8 records
+2025-05-28 13:38:11,902 - INFO -   ✅ 3nf_stores: 67 records
+2025-05-28 13:38:12,093 - INFO -   ✅ 3nf_customers: 15,266 records
+2025-05-28 13:38:12,182 - INFO -   ✅ 3nf_cities: 8,258 records
+2025-05-28 13:38:12,256 - INFO -   ✅ 3nf_states: 524 records
+2025-05-28 13:38:12,329 - INFO -   ✅ 3nf_countries: 9 records
+2025-05-28 13:38:12,408 - INFO -   ✅ 3nf_continents: 3 records
+2025-05-28 13:38:12,485 - INFO -   ✅ dm_customers: 15,266 records
+2025-05-28 13:38:12,558 - INFO -   ✅ dm_products: 2,517 records
+2025-05-28 13:38:12,637 - INFO -   ✅ dm_stores: 67 records
+2025-05-28 13:38:12,723 - INFO -   ✅ fact_sales: 62,884 records
+2025-05-28 13:38:12,723 - INFO - ✅ Data flow consistency validated
+2025-05-28 13:38:12,723 - INFO - 🎯 CRITICAL TEST: Data Quality Checks
+2025-05-28 13:38:13,286 - INFO - ✅ staging.sales."Order Number": No NULL values
+2025-05-28 13:38:13,286 - INFO - ✅ staging.customers."CustomerKey": No NULL values
+2025-05-28 13:38:13,286 - INFO - ✅ staging.products."ProductKey": No NULL values
+2025-05-28 13:38:13,286 - INFO - ✅ staging.stores."StoreKey": No NULL values
+2025-05-28 13:38:13,286 - INFO - ℹ️ Total sales: 62,884
+2025-05-28 13:38:13,286 - INFO - ✅ All fact table references resolved
+2025-05-28 13:38:13,287 - INFO - 🎯 CRITICAL TEST: SCD Functionality
+2025-05-28 13:38:13,371 - INFO - ✅ SCD Type 2 Products: 2,517 total, 2,517 active
+2025-05-28 13:38:13,371 - INFO - ℹ️ No historical versions yet (expected for initial load)
+2025-05-28 13:38:13,576 - INFO - ✅ SCD Type 1 Customers: 15,266 loaded
+2025-05-28 13:38:13,577 - INFO - 🎯 CRITICAL TESTS COMPLETED: 100.0% success rate
+2025-05-28 13:38:13,577 - INFO - 🚀🚀🚀 STARTING EXTENDED TESTS 🚀🚀🚀
+2025-05-28 13:38:13,577 - INFO - 🚀 EXTENDED TEST: Full ETL Pipeline
+2025-05-28 13:38:18,629 - INFO - Procedure bl_cl.sp_run_full_etl executed successfully
+2025-05-28 13:38:18,630 - INFO - ✅ Full ETL pipeline completed in 0:00:05.050390
+2025-05-28 13:38:18,715 - INFO -   staging_sales: 62,884 records
+2025-05-28 13:38:18,789 - INFO -   dm_customers: 15,266 records
+2025-05-28 13:38:18,883 - INFO -   dm_products: 2,517 records
+2025-05-28 13:38:18,963 - INFO -   dm_stores: 67 records
+2025-05-28 13:38:19,050 - INFO -   fact_sales: 62,884 records
+2025-05-28 13:38:19,050 - INFO - 🚀 EXTENDED TEST: Business Rules Validation
+2025-05-28 13:38:19,243 - INFO - ✅ Date dimension: 1937 dates, 7 years
+2025-05-28 13:38:19,244 - INFO - ✅ Geographic hierarchy: 176 major geo combinations
+2025-05-28 13:38:19,244 - INFO - 🚀 EXTENDED TEST: Performance Benchmarks
+2025-05-28 13:38:19,342 - INFO - ✅ Simple fact aggregation: 0.098s, 1 rows
+2025-05-28 13:38:19,491 - INFO - ✅ Sales by product category: 0.150s, 8 rows
+2025-05-28 13:38:19,649 - INFO - ✅ Sales by customer geography: 0.158s, 10 rows
+2025-05-28 13:38:19,650 - INFO - ✅ All queries performed within acceptable time
+2025-05-28 13:38:19,650 - INFO - 🚀 EXTENDED TEST: Data Lineage & Audit Trail
+2025-05-28 13:38:19,747 - INFO - ✅ Audit trail: 23 procedures logged
+2025-05-28 13:38:19,747 - INFO -   bl_3nf.sp_create_ddl_objects: 21 runs ✅
+2025-05-28 13:38:19,748 - INFO -   bl_dm.sp_create_dim_ddl_objects: 22 runs ✅
+2025-05-28 13:38:19,748 - INFO -   bl_dm.sp_load_dim_products_scd: 22 runs ✅
+2025-05-28 13:38:19,748 - INFO -   bl_dm.sp_load_fct_sales: 26 runs ✅
+2025-05-28 13:38:19,748 - INFO -   staging.sp_load_products_data: 46 runs ✅
+2025-05-28 13:38:19,848 - INFO - ✅ Source system tracking working
+2025-05-28 13:38:19,849 - INFO -   BL_3NF.CE_CUSTOMERS, CE_CITIES, CE_STATES, CE_COUNTRIES, CE_CONTINENTS: 15,266 records
+2025-05-28 13:38:19,849 - INFO - 🚀 EXTENDED TESTS COMPLETED: 100.0% success rate
+2025-05-28 13:38:19,849 - INFO - ================================================================================
+2025-05-28 13:38:19,849 - INFO - TEST EXECUTION SUMMARY
+2025-05-28 13:38:19,849 - INFO - ================================================================================
+2025-05-28 13:38:19,850 - INFO - 🔥 Smoke Tests: ✅ PASSED
+2025-05-28 13:38:19,850 - INFO - 🎯 Critical Tests: ✅ PASSED
+2025-05-28 13:38:19,850 - INFO - 🚀 Extended Tests: ✅ PASSED
+2025-05-28 13:38:19,850 - INFO - ⏱️ Total Duration: 0:00:13.589702
+2025-05-28 13:38:19,850 - INFO - ================================================================================
