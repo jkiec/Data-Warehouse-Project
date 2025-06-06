@@ -351,10 +351,10 @@ The Power BI solution provides comprehensive business intelligence capabilities:
 #### 🏪 **Store Operations**
 
 ### Report File
-![Report](PowerBI-Report/Sales-Report.pbix)
+![Report](PowerBI_Report/Sales-Report.pbix)
 
 ### Detailed description of the report 
-![README](PowerBI-Report/README.md) 
+![README](PowerBI_Report/README.md) 
 
 ### Data Refresh
 Power BI connects directly to the dimensional model:
