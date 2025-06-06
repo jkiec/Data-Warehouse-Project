@@ -40,14 +40,14 @@ Global Electronics Retailers operates across multiple countries with:
 The data warehouse follows a traditional three-layer architecture:
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   SOURCE DATA   │ => │  STAGING LAYER  │ => │   3NF LAYER     │ => │  DIMENSIONAL    │
-│                 │    │                 │    │  (NORMALIZED)   │    │     MODEL       │
-│ • Sales CSV     │    │ • Data Cleaning │    │ • Business      │    │ • Star Schema   │
-│ • Customers CSV │    │ • Validation    │    │   Rules         │    │ • Aggregations  │
-│ • Products CSV  │    │ • Standardization│   │ • Referential   │    │ • Performance   │
-│ • Stores CSV    │    │ • Deduplication │    │   Integrity     │    │   Optimization  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   SOURCE DATA   │ => │  STAGING LAYER   │ => │   3NF LAYER     │ => │  DIMENSIONAL    │
+│                 │    │                  │    │  (NORMALIZED)   │    │     MODEL       │
+│ • Sales CSV     │    │ • Data Cleaning  │    │ • Business      │    │ • Star Schema   │
+│ • Customers CSV │    │ • Validation     │    │   Rules         │    │ • Aggregations  │
+│ • Products CSV  │    │ • Standardization│    │ • Referential   │    │ • Performance   │
+│ • Stores CSV    │    │ • Deduplication  │    │   Integrity     │    │   Optimization  │
+└─────────────────┘    └──────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
 ### Layer Details
@@ -82,7 +82,7 @@ The data warehouse follows a traditional three-layer architecture:
 *Data flow from data_source layer to staging*
 
 #### 3NF Layer Schema
-![3NF Schema](docs/images/logical_schema_3NF_layer.png)
+![3NF Schema](docs/logical_schema_3NF_layer.png)
 *Normalized business model with referential integrity*
 
 ![Data Mapping](docs/data_mapping_from_staging_to_3NF_layer.pdf)
@@ -351,10 +351,10 @@ The Power BI solution provides comprehensive business intelligence capabilities:
 #### 🏪 **Store Operations**
 
 ### Report File
-- `PowerBI-Report/Sales-Report.pbix`
-- 
+![Report](PowerBI-Report/Sales-Report.pbix)
+
 ### Detailed description of the report 
-- `PowerBI-Report/README.md` 
+![README](PowerBI-Report/README.md) 
 
 ### Data Refresh
 Power BI connects directly to the dimensional model:
