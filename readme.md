@@ -382,7 +382,7 @@ Data-Warehouse-Project/
 │   ├── README.md                    # Report description
 │   ├── Sales-Report.pbix            # Power BI report
 │   ├── 📂  demo-video/
-│   │   └── report-demo.mkv          # Demo Video
+│   │   └── report-demo.mp4          # Demo Video
 │   └── 📂screenshots/
 │       ├── general-overview.png
 │       ├── custom-tooltip.png

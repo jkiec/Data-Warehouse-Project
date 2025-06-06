@@ -29,7 +29,7 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 
 ## 🎥 Demo Video
 
-🎬 **[Watch the Full Demo](demo-video/report-demo.mkv)**
+🎬 **[Watch the Full Demo](demo-video/report-demo.mp4)**
 
 *A comprehensive walkthrough showcasing all interactive features, filtering capabilities, and advanced Power BI functionalities.*
 
@@ -163,7 +163,7 @@ PowerBI-Report/
 ├── README.md
 ├── Sales-Report.pbix
 ├── demo-video/
-│   └── report-demo.mkv
+│   └── report-demo.mp4
 └── screenshots/
     ├── general-overview.png
     ├── custom-tooltip.png
