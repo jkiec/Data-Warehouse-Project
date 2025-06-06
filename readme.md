@@ -354,7 +354,7 @@ The Power BI solution provides comprehensive business intelligence capabilities:
 ![Report](PowerBI_Report/Sales-Report.pbix)
 
 ### Detailed description of the report 
-![README](PowerBI_Report/README.md) 
+![README](PowerBI_Report/readme.md) 
 
 ### Data Refresh
 Power BI connects directly to the dimensional model:
