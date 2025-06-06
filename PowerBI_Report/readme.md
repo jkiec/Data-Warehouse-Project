@@ -1,9 +1,3 @@
-# 📊 Power BI Business Intelligence Portfolio
-
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)
-![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
-![Business Intelligence](https://img.shields.io/badge/Business_Intelligence-4285F4?style=for-the-badge&logo=google-analytics&logoColor=white)
-
 ## 🎯 Project Overview
 
 This comprehensive Power BI solution provides advanced business intelligence capabilities for **Global Electronics Retailers**, demonstrating key data analyst skills through interactive reports, advanced filtering, and user-centric design.
