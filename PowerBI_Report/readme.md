@@ -29,7 +29,7 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 
 ## 🎥 Demo Video
 
-🎬 **[Watch the Full Demo](demo-video/report-demo.mp4)**
+https://github.com/jkiec/Data-Warehouse-Project/blob/main/PowerBI_Report/demo-video/report-demo.mp4
 
 *A comprehensive walkthrough showcasing all interactive features, filtering capabilities, and advanced Power BI functionalities.*
 
