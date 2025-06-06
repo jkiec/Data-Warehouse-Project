@@ -70,12 +70,13 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 **Key Features:**
 - Interactive time controls with zoom slider functionality
 - Custom tooltips showing weekly order trends for individual products
+![Custom Tooltip](screenshots/custom-tooltip.png)
 - Cross-filtering capabilities for deep-dive analysis
 
 ### 2. 🏪 Drill-Through Navigation
 **Detailed store-specific analysis**
 
-![Store Analysis](screenshots/store-analysis.png)
+![Store Analysis](screenshots/store-analysis.PNG)
 
 **Capabilities:**
 - Store-specific performance pages with comprehensive data
@@ -104,7 +105,7 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 ### 4. 🔍 Advanced Filtering System
 **Powerful data segmentation tools**
 
-![Filtering System](screenshots/filtering-system.png)
+![Filtering System](screenshots/filtering-system.PNG)
 
 **Features:**
 - Custom slicer panel accessible via navigation buttons
@@ -165,6 +166,7 @@ PowerBI-Report/
 │   └── report-demo.mkv
 └── screenshots/
     ├── general-overview.png
+    ├── custom-tooltip.png
     ├── customer-analytics.png
     ├── filtering-system.png
     └── store-analysis.png

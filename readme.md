@@ -385,6 +385,7 @@ Data-Warehouse-Project/
 │   │   └── report-demo.mkv          # Demo Video
 │   └── 📂screenshots/
 │       ├── general-overview.png
+│       ├── custom-tooltip.png
 │       ├── customer-analytics.png
 │       ├── filtering-system.png
 │       └── store-analysis.png
