@@ -25,6 +25,8 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 
 ![Demo Video](demo-video/report-demo.mp4)
 
+https://github.com/user-attachments/assets/3011f152-3dee-4d05-9030-8a2436dacd7b
+
 *A comprehensive walkthrough showcasing all interactive features, filtering capabilities, and advanced Power BI functionalities.*
 
 ## 🚀 Key Features
