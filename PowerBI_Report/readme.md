@@ -1,4 +1,4 @@
-## 🎯 Project Overview
+## 🎯 Power BI report Overview
 
 This comprehensive Power BI solution provides advanced business intelligence capabilities for **Global Electronics Retailers**, demonstrating key data analyst skills through interactive reports, advanced filtering, and user-centric design.
 
@@ -16,14 +16,12 @@ This comprehensive Power BI solution provides advanced business intelligence cap
 ## 🛠️ Technologies Used
 
 - **Power BI Desktop** - Report development and data modeling
-- **DAX (Data Analysis Expressions)** - Advanced calculations and measures
+- **DAX** - Advanced calculations and measures
 - **Power Query** - Data transformation and preparation
 - **M Language** - Data cleaning and reshaping
 - **Business Intelligence Design** - UX/UI best practices
 
 ## 🎥 Demo Video
-
-![Demo Video](demo-video/report-demo.mp4)
 
 https://github.com/user-attachments/assets/3011f152-3dee-4d05-9030-8a2436dacd7b
 

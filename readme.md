@@ -37,7 +37,7 @@ Global Electronics Retailers operates across multiple countries with:
 
 ## 🏗️ Architecture
 
-The data warehouse follows a traditional three-layer architecture:
+The data warehouse follows a standard three-layer architecture:
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -78,21 +78,21 @@ The data warehouse follows a traditional three-layer architecture:
 ![Staging Schema](docs/logical_schema_staging_layer.png)
 *Raw data tables with basic cleaning and validation*
 
-![Data Mapping](docs/data_mapping_from_data_source_to_staging.pdf)
+[Data Mapping](docs/data_mapping_from_data_source_to_staging.pdf)
 *Data flow from data_source layer to staging*
 
 #### 3NF Layer Schema
 ![3NF Schema](docs/logical_schema_3NF_layer.png)
 *Normalized business model with referential integrity*
 
-![Data Mapping](docs/data_mapping_from_staging_to_3NF_layer.pdf)
+[Data Mapping](docs/data_mapping_from_staging_to_3NF_layer.pdf)
 *Data flow from staging layer to 3NF layer*
 
 #### Dimensional Model Schema
 ![Dimensional Schema](docs/logical_schema_dimensional_layer.png)
 *Star schema optimized for analytical queries*
 
-![Data Mapping](docs/data_mapping_from_3NF_to_dimensional_layer.pdf)
+[Data Mapping](docs/data_mapping_from_3NF_to_dimensional_layer.pdf)
 *Data flow from 3NF layer to Dimensional layer*
 
 ### Key Entities
@@ -351,10 +351,10 @@ The Power BI solution provides comprehensive business intelligence capabilities:
 #### 🏪 **Store Operations**
 
 ### Report File
-![Report](PowerBI_Report/Sales-Report.pbix)
+[Report](PowerBI_Report/Sales-Report.pbix)
 
 ### Detailed description of the report 
-![README](PowerBI_Report/readme.md) 
+[README](PowerBI_Report/readme.md) 
 
 ### Data Refresh
 Power BI connects directly to the dimensional model:
